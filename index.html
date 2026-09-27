@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodi-Fast</title>
+    <link rel="shortcut icon" href="src/assets/images/foodi-logo.svg" type="image/svg">
+    <link rel="stylesheet" href="src/assets/css/all.min.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+</head>
+
+<body class="flex min-h-screen flex-col">
+    <!-- Header Start  -->
+
+    <header class="absolute top-0 left-0 z-50 w-full px-4 py-4 sm:px-6 lg:px-10">
+        <div
+            class="mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-white/50 bg-white/90 px-4 py-3 shadow-lg backdrop-blur-md sm:px-6">
+            <!-- Logo -->
+            <a href="index.html" class="shrink-0">
+                <img src="src/assets/images/foodi-logo.svg" alt="Foodi Logo" class="h-9 w-auto sm:h-10" />
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden items-center gap-1 md:flex">
+                <a href="index.html"
+                    class="font-nato rounded-full bg-[#E10101] px-5 py-2 text-[16px] font-medium text-white transition duration-300 hover:bg-[#c90000] ">
+                    Home
+                </a>
+
+                <a href="#"
+                    class=" font-nato rounded-full px-5 py-2 text-[16px] font-medium text-gray-700 transition duration-300 hover:bg-red-50 hover:text-[#E10101] ">
+                    About
+                </a>
+
+                <a href="#"
+                    class="font-nato rounded-full px-5 py-2 text-[16px] font-medium text-gray-700 transition duration-300 hover:bg-red-50 hover:text-[#E10101]">
+                    Menu
+                </a>
+
+                <a href="#"
+                    class="font-nato rounded-full px-5 py-2 text-[16px] font-medium text-gray-700 transition duration-300 hover:bg-red-50 hover:text-[#E10101]">
+                    Contact
+                </a>
+
+                <a href="#"
+                    class="font-nato rounded-full px-5 py-2 text-[16px] font-medium text-gray-700 transition duration-300 hover:bg-red-50 hover:text-[#E10101]">
+                    Reservation
+                </a>
+            </nav>
+
+            <!-- Right Side -->
+            <div class="flex items-center gap-2 sm:gap-3">
+
+                <!-- Cart -->
+                <a href="#" aria-label="Shopping Cart"
+                    class="relative flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-[#E10101] text-white transition duration-400 hover:border-red-100 hover:bg-red-50 hover:text-[#E10101]">
+                    <i class="fa-solid fa-cart-shopping text-sm"></i>
+
+                    <!-- Cart Count -->
+                    <span
+                        class="absolute -right-1 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-black px-1 text-[9px] font-bold text-white ">
+                        1
+                    </span>
+                </a>
+
+                <!-- Dashboard -->
+                <a href="dasbord.html"
+                    class="font-nato hidden rounded-full bg-[#E10101] px-5 py-2.5 text-[16px] font-medium text-white shadow-sm transition duration-300 hover:bg-[#c90000] hover:shadow-md sm:block">
+                    Dashboard
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button type="button" aria-label="Open Menu"
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 transition duration-300 hover:bg-red-50 hover:text-[#E10101] md:hidden cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+    <!-- Header E N D  -->
+
+
+    <main class="flex-1">
+        <!-- Banner Section Start  -->
+
+        <section class="relative min-h-screen overflow-hidden">
+
+            <!-- Banner Image -->
+            <img src="src/assets/images/banner-pizza.jpg" alt="Delicious Pizza"
+                class="absolute inset-0 h-full w-full object-cover" />
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/55 backdrop-blur-sm"></div>
+
+            <!-- BANNER CONTENT -->
+            <div class="relative z-10 flex min-h-screen items-center justify-center px-5 text-center">
+
+                <div class="max-w-3xl">
+
+                    <p class="font-nato mb-4 text-sm font-medium uppercase tracking-[0.25em] text-white/90">
+                        Taste the Difference
+                    </p>
+
+                    <h1
+                        class="font-nato text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                        Delicious Food,
+                        <span class="text-white">Made With Love</span>
+                    </h1>
+
+                    <p class="font-nato mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/85 sm:text-base md:text-lg">
+                        Fresh ingredients, authentic flavors, and unforgettable taste.
+                        Discover your favorite dishes and enjoy every bite.
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+
+                        <a href="#"
+                            class="font-nato rounded-full bg-[#E10101] px-8 py-3 text-[18px] font-semibold text-white shadow-lg transition duration-300 hover:bg-[#c90000] hover:shadow-xl">
+                            Order Now
+                        </a>
+
+                        <a href="#"
+                            class="font-nato rounded-full border border-white/70 bg-white/10 px-8 py-3 text-[18px] font-semibold text-white backdrop-blur-sm transition duration-300 hover:bg-white hover:text-[#E10101]">
+                            Review
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Banner Section E N D  -->
+
+
+        <!-- Product Section Start  -->
+
+        <section id="menu" class="bg-white px-4 py-16 sm:px-6 lg:px-10 lg:py-20">
+            <div class="mx-auto max-w-7xl">
+
+                <!-- Section Heading -->
+                <div class="mb-10 text-center sm:mb-12">
+
+                    <p class="font-nato mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-[#E10101]">
+                        Our Menu
+                    </p>
+
+                    <h2 class="font-nato text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
+                        Explore Our Delicious Foods
+                    </h2>
+
+                    <p class="font-nato mx-auto mt-3 max-w-2xl text-sm leading-7 text-gray-500 sm:text-base">
+                        Discover our delicious collection of freshly prepared meals,
+                        made with quality ingredients
+                    </p>
+
+                </div>
+
+
+
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+                    <!-- Product 01 -->
+                    <div
+                        class=" overflow-hidden rounded-sm border border-gray-100 bg-white shadow-sm transition duration-300 cursor-pointer ">
+
+                        <!-- Image -->
+                        <div class="relative h-56 overflow-hidden bg-gray-100">
+
+                            <img src="src/assets/images/foods/Chicken_Burger.jpg" alt="Chicken Burger"
+                                class="h-full w-full object-cover transition duration-500 " />
+
+                            <!-- Rating -->
+                            <div
+                                class="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-3 py-1.5 shadow-sm backdrop-blur-sm">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <span class="font-nato text-xs font-semibold text-gray-700">
+                                    4.0
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Content -->
+                        <div class="p-5">
+
+                            <h3 class="font-nato text-lg font-bold text-gray-900">
+                                Chicken Burger
+                            </h3>
+
+                            <!-- Stars -->
+                            <div class="mt-2 flex items-center gap-1">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-gray-200"></i>
+
+                                <span class="font-nato ml-1 text-xs text-gray-400">
+                                    (4)
+                                </span>
+                            </div>
+
+                            <!-- Price -->
+                            <p class="font-nato mt-4 text-xl font-bold text-[#E10101]">
+                                $12
+                            </p>
+
+                            <!-- Buttons -->
+                            <div class="mt-5 grid grid-cols-2 gap-2">
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer border border-[#E10101] px-3 py-2.5 text-sm font-semibold text-[#E10101] transition duration-300 hover:bg-[#E10101] hover:text-white">
+                                    <i class="fa-solid fa-cart-plus text-xs"></i>
+                                    Add to Cart
+                                </button>
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer bg-[#E10101] px-3 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-[#c90000]">
+                                    Buy Now
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Product 02 : Chicken Cheese Pizza -->
+                    <div
+                        class="overflow-hidden rounded-sm border border-gray-100 bg-white shadow-sm transition duration-300 cursor-pointer">
+
+                        <!-- Image -->
+                        <div class="relative h-56 overflow-hidden bg-gray-100">
+
+                            <img src="src/assets/images/foods/Chicken_Cheese_Pizza.jpg" alt="Chicken Cheese Pizza"
+                                class="h-full w-full object-cover transition duration-500" />
+
+                            <!-- Rating -->
+                            <div
+                                class="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-3 py-1.5 shadow-sm backdrop-blur-sm">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <span class="font-nato text-xs font-semibold text-gray-700">
+                                    5.0
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-5">
+
+                            <h3 class="font-nato text-lg font-bold text-gray-900">
+                                Chicken Cheese Pizza
+                            </h3>
+
+                            <!-- Stars -->
+                            <div class="mt-2 flex items-center gap-1">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+
+                                <span class="font-nato ml-1 text-xs text-gray-400">
+                                    (5)
+                                </span>
+                            </div>
+
+                            <!-- Price -->
+                            <p class="font-nato mt-4 text-xl font-bold text-[#E10101]">
+                                $15
+                            </p>
+
+                            <!-- Buttons -->
+                            <div class="mt-5 grid grid-cols-2 gap-2">
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer border border-[#E10101] px-3 py-2.5 text-sm font-semibold text-[#E10101] transition duration-300 hover:bg-[#E10101] hover:text-white">
+                                    <i class="fa-solid fa-cart-plus text-xs"></i>
+                                    Add to Cart
+                                </button>
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer bg-[#E10101] px-3 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-[#c90000]">
+                                    Buy Now
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Product 03 : Chicken Fry -->
+                    <div
+                        class="overflow-hidden rounded-sm border border-gray-100 bg-white shadow-sm transition duration-300 cursor-pointer">
+
+                        <!-- Image -->
+                        <div class="relative h-56 overflow-hidden bg-gray-100">
+
+                            <img src="src/assets/images/foods/Chicken_Fry.jpg" alt="Chicken Fry"
+                                class="h-full w-full object-cover transition duration-500" />
+
+                            <!-- Rating -->
+                            <div
+                                class="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-3 py-1.5 shadow-sm backdrop-blur-sm">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <span class="font-nato text-xs font-semibold text-gray-700">
+                                    2.0
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-5">
+
+                            <h3 class="font-nato text-lg font-bold text-gray-900">
+                                Chicken Fry
+                            </h3>
+
+                            <!-- Stars -->
+                            <div class="mt-2 flex items-center gap-1">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-gray-200"></i>
+                                <i class="fa-solid fa-star text-xs text-gray-200"></i>
+                                <i class="fa-solid fa-star text-xs text-gray-200"></i>
+
+                                <span class="font-nato ml-1 text-xs text-gray-400">
+                                    (2)
+                                </span>
+                            </div>
+
+                            <!-- Price -->
+                            <p class="font-nato mt-4 text-xl font-bold text-[#E10101]">
+                                $32
+                            </p>
+
+                            <!-- Buttons -->
+                            <div class="mt-5 grid grid-cols-2 gap-2">
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer border border-[#E10101] px-3 py-2.5 text-sm font-semibold text-[#E10101] transition duration-300 hover:bg-[#E10101] hover:text-white">
+                                    <i class="fa-solid fa-cart-plus text-xs"></i>
+                                    Add to Cart
+                                </button>
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer bg-[#E10101] px-3 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-[#c90000]">
+                                    Buy Now
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Product 04 : Chicken Sandwich -->
+                    <div
+                        class="overflow-hidden rounded-sm border border-gray-100 bg-white shadow-sm transition duration-300 cursor-pointer">
+
+                        <!-- Image -->
+                        <div class="relative h-56 overflow-hidden bg-gray-100">
+
+                            <img src="src/assets/images/foods/Chicken_Sandwich.jpg" alt="Chicken Sandwich"
+                                class="h-full w-full object-cover transition duration-500" />
+
+                            <!-- Rating -->
+                            <div
+                                class="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-3 py-1.5 shadow-sm backdrop-blur-sm">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <span class="font-nato text-xs font-semibold text-gray-700">
+                                    5.0
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-5">
+
+                            <h3 class="font-nato text-lg font-bold text-gray-900">
+                                Chicken Sandwich
+                            </h3>
+
+                            <!-- Stars -->
+                            <div class="mt-2 flex items-center gap-1">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+
+                                <span class="font-nato ml-1 text-xs text-gray-400">
+                                    (5)
+                                </span>
+                            </div>
+
+                            <!-- Price -->
+                            <p class="font-nato mt-4 text-xl font-bold text-[#E10101]">
+                                $7
+                            </p>
+
+                            <!-- Buttons -->
+                            <div class="mt-5 grid grid-cols-2 gap-2">
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer border border-[#E10101] px-3 py-2.5 text-sm font-semibold text-[#E10101] transition duration-300 hover:bg-[#E10101] hover:text-white">
+                                    <i class="fa-solid fa-cart-plus text-xs"></i>
+                                    Add to Cart
+                                </button>
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer bg-[#E10101] px-3 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-[#c90000]">
+                                    Buy Now
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Product 05 : Fry Nurger -->
+                    <div
+                        class="overflow-hidden rounded-sm border border-gray-100 bg-white shadow-sm transition duration-300 cursor-pointer">
+
+                        <!-- Image -->
+                        <div class="relative h-56 overflow-hidden bg-gray-100">
+
+                            <img src="src/assets/images/foods/Fry_Nurger.jpg" alt="Fry Nurger"
+                                class="h-full w-full object-cover transition duration-500" />
+
+                            <!-- Rating -->
+                            <div
+                                class="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-3 py-1.5 shadow-sm backdrop-blur-sm">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <span class="font-nato text-xs font-semibold text-gray-700">
+                                    5.0
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-5">
+
+                            <h3 class="font-nato text-lg font-bold text-gray-900">
+                                Fry Nurger
+                            </h3>
+
+                            <!-- Stars -->
+                            <div class="mt-2 flex items-center gap-1">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+
+                                <span class="font-nato ml-1 text-xs text-gray-400">
+                                    (5)
+                                </span>
+                            </div>
+
+                            <!-- Price -->
+                            <p class="font-nato mt-4 text-xl font-bold text-[#E10101]">
+                                $10
+                            </p>
+
+                            <!-- Buttons -->
+                            <div class="mt-5 grid grid-cols-2 gap-2">
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer border border-[#E10101] px-3 py-2.5 text-sm font-semibold text-[#E10101] transition duration-300 hover:bg-[#E10101] hover:text-white">
+                                    <i class="fa-solid fa-cart-plus text-xs"></i>
+                                    Add to Cart
+                                </button>
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer bg-[#E10101] px-3 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-[#c90000]">
+                                    Buy Now
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Product 06 : Grill Chicken -->
+                    <div
+                        class="overflow-hidden rounded-sm border border-gray-100 bg-white shadow-sm transition duration-300 cursor-pointer">
+
+                        <!-- Image -->
+                        <div class="relative h-56 overflow-hidden bg-gray-100">
+
+                            <img src="src/assets/images/foods/Grill_Chicken.jpg" alt="Grill Chicken"
+                                class="h-full w-full object-cover transition duration-500" />
+
+                            <!-- Rating -->
+                            <div
+                                class="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-3 py-1.5 shadow-sm backdrop-blur-sm">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <span class="font-nato text-xs font-semibold text-gray-700">
+                                    5.0
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-5">
+
+                            <h3 class="font-nato text-lg font-bold text-gray-900">
+                                Grill Chicken
+                            </h3>
+
+                            <!-- Stars -->
+                            <div class="mt-2 flex items-center gap-1">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+
+                                <span class="font-nato ml-1 text-xs text-gray-400">
+                                    (5)
+                                </span>
+                            </div>
+
+                            <!-- Price -->
+                            <p class="font-nato mt-4 text-xl font-bold text-[#E10101]">
+                                $3
+                            </p>
+
+                            <!-- Buttons -->
+                            <div class="mt-5 grid grid-cols-2 gap-2">
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer border border-[#E10101] px-3 py-2.5 text-sm font-semibold text-[#E10101] transition duration-300 hover:bg-[#E10101] hover:text-white">
+                                    <i class="fa-solid fa-cart-plus text-xs"></i>
+                                    Add to Cart
+                                </button>
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer bg-[#E10101] px-3 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-[#c90000]">
+                                    Buy Now
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Product 07 : Pasta -->
+                    <div
+                        class="overflow-hidden rounded-sm border border-gray-100 bg-white shadow-sm transition duration-300 cursor-pointer">
+
+                        <!-- Image -->
+                        <div class="relative h-56 overflow-hidden bg-gray-100">
+
+                            <img src="src/assets/images/foods/Pasta.jpg" alt="Pasta"
+                                class="h-full w-full object-cover transition duration-500" />
+
+                            <!-- Rating -->
+                            <div
+                                class="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-3 py-1.5 shadow-sm backdrop-blur-sm">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <span class="font-nato text-xs font-semibold text-gray-700">
+                                    2.0
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-5">
+
+                            <h3 class="font-nato text-lg font-bold text-gray-900">
+                                Pasta
+                            </h3>
+
+                            <!-- Stars -->
+                            <div class="mt-2 flex items-center gap-1">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-gray-200"></i>
+                                <i class="fa-solid fa-star text-xs text-gray-200"></i>
+                                <i class="fa-solid fa-star text-xs text-gray-200"></i>
+
+                                <span class="font-nato ml-1 text-xs text-gray-400">
+                                    (2)
+                                </span>
+                            </div>
+
+                            <!-- Price -->
+                            <p class="font-nato mt-4 text-xl font-bold text-[#E10101]">
+                                $44
+                            </p>
+
+                            <!-- Buttons -->
+                            <div class="mt-5 grid grid-cols-2 gap-2">
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer border border-[#E10101] px-3 py-2.5 text-sm font-semibold text-[#E10101] transition duration-300 hover:bg-[#E10101] hover:text-white">
+                                    <i class="fa-solid fa-cart-plus text-xs"></i>
+                                    Add to Cart
+                                </button>
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer bg-[#E10101] px-3 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-[#c90000]">
+                                    Buy Now
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Product 08 : Seekh Kebab -->
+                    <div
+                        class="overflow-hidden rounded-sm border border-gray-100 bg-white shadow-sm transition duration-300 cursor-pointer">
+
+                        <!-- Image -->
+                        <div class="relative h-56 overflow-hidden bg-gray-100">
+
+                            <img src="src/assets/images/foods/Seekh_Kebab.jpg" alt="Seekh Kebab"
+                                class="h-full w-full object-cover transition duration-500" />
+
+                            <!-- Rating -->
+                            <div
+                                class="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-3 py-1.5 shadow-sm backdrop-blur-sm">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <span class="font-nato text-xs font-semibold text-gray-700">
+                                    5.0
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-5">
+
+                            <h3 class="font-nato text-lg font-bold text-gray-900">
+                                Seekh Kebab
+                            </h3>
+
+                            <!-- Stars -->
+                            <div class="mt-2 flex items-center gap-1">
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+                                <i class="fa-solid fa-star text-xs text-[#E10101]"></i>
+
+                                <span class="font-nato ml-1 text-xs text-gray-400">
+                                    (5)
+                                </span>
+                            </div>
+
+                            <!-- Price -->
+                            <p class="font-nato mt-4 text-xl font-bold text-[#E10101]">
+                                $43
+                            </p>
+
+                            <!-- Buttons -->
+                            <div class="mt-5 grid grid-cols-2 gap-2">
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer border border-[#E10101] px-3 py-2.5 text-sm font-semibold text-[#E10101] transition duration-300 hover:bg-[#E10101] hover:text-white">
+                                    <i class="fa-solid fa-cart-plus text-xs"></i>
+                                    Add to Cart
+                                </button>
+
+                                <button type="button"
+                                    class="font-nato flex items-center justify-center gap-2 rounded-sm cursor-pointer bg-[#E10101] px-3 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-[#c90000]">
+                                    Buy Now
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Product Section E N D  -->
+
+
+        <!-- Custommer Review Section Start  -->
+
+        <!-- Customer Reviews Section -->
+        <section class="bg-gray-50 py-20">
+
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+                <!-- Section Heading -->
+                <div class="mx-auto max-w-2xl text-center">
+
+                    <span
+                        class="font-nato inline-block rounded-full bg-red-50 px-4 py-1.5 text-sm font-semibold text-[#E10101]">
+                        Customer Reviews
+                    </span>
+
+                    <h2 class="font-nato mt-4 text-3xl font-bold text-gray-900 sm:text-4xl">
+                        What Our Customers Say
+                    </h2>
+
+                    <p class="font-nato mt-4 text-sm leading-7 text-gray-500 sm:text-base">
+                        We love hearing from our customers. Here's what they have
+                        to say about their experience with our food and service.
+                    </p>
+
+                </div>
+
+
+                <!-- Reviews -->
+                <div class="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+
+                    <!-- Review 01 -->
+                    <div
+                        class="relative rounded-2xl border border-gray-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                        <!-- Quote Icon -->
+                        <div
+                            class="absolute right-6 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-red-50">
+                            <i class="fa-solid fa-quote-right text-lg text-[#E10101]"></i>
+                        </div>
+
+
+                        <!-- Customer -->
+                        <div class="flex items-center gap-4">
+
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Ahmed"
+                                class="h-14 w-14 rounded-full border-2 border-red-100 object-cover">
+
+                            <div>
+                                <h3 class="font-nato text-base font-bold text-gray-900">
+                                    Sarah Ahmed
+                                </h3>
+
+                                <p class="font-nato mt-1 text-xs text-gray-400">
+                                    Verified Customer
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Stars -->
+                        <div class="mt-5 flex items-center gap-1">
+
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+
+                        </div>
+
+
+                        <!-- Review -->
+                        <p class="font-nato mt-5 text-sm leading-7 text-gray-600">
+                            "Absolutely loved the food! Everything was fresh,
+                            delicious, and perfectly prepared. The burger was
+                            amazing and the service was excellent."
+                        </p>
+
+                    </div>
+
+
+                    <!-- Review 02 -->
+                    <div
+                        class="relative rounded-2xl border border-gray-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                        <!-- Quote Icon -->
+                        <div
+                            class="absolute right-6 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-red-50">
+                            <i class="fa-solid fa-quote-right text-lg text-[#E10101]"></i>
+                        </div>
+
+
+                        <!-- Customer -->
+                        <div class="flex items-center gap-4">
+
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Wilson"
+                                class="h-14 w-14 rounded-full border-2 border-red-100 object-cover">
+
+                            <div>
+                                <h3 class="font-nato text-base font-bold text-gray-900">
+                                    James Wilson
+                                </h3>
+
+                                <p class="font-nato mt-1 text-xs text-gray-400">
+                                    Verified Customer
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Stars -->
+                        <div class="mt-5 flex items-center gap-1">
+
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+
+                        </div>
+
+
+                        <!-- Review -->
+                        <p class="font-nato mt-5 text-sm leading-7 text-gray-600">
+                            "One of the best restaurants I've visited recently.
+                            The pizza was delicious, the portion was generous,
+                            and everything arrived hot and fresh."
+                        </p>
+
+                    </div>
+
+
+                    <!-- Review 03 -->
+                    <div
+                        class="relative rounded-2xl border border-gray-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                        <!-- Quote Icon -->
+                        <div
+                            class="absolute right-6 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-red-50">
+                            <i class="fa-solid fa-quote-right text-lg text-[#E10101]"></i>
+                        </div>
+
+
+                        <!-- Customer -->
+                        <div class="flex items-center gap-4">
+
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Carter"
+                                class="h-14 w-14 rounded-full border-2 border-red-100 object-cover">
+
+                            <div>
+                                <h3 class="font-nato text-base font-bold text-gray-900">
+                                    Emily Carter
+                                </h3>
+
+                                <p class="font-nato mt-1 text-xs text-gray-400">
+                                    Verified Customer
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Stars -->
+                        <div class="mt-5 flex items-center gap-1">
+
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+
+                        </div>
+
+
+                        <!-- Review -->
+                        <p class="font-nato mt-5 text-sm leading-7 text-gray-600">
+                            "The chicken sandwich was fantastic! I really liked
+                            the presentation and the taste. Definitely coming
+                            back again with my family."
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bottom Rating -->
+                <div class="mt-12 flex justify-center">
+
+                    <div
+                        class="flex items-center gap-3 rounded-full border border-gray-100 bg-white px-5 py-3 shadow-sm">
+
+                        <div class="flex items-center gap-1">
+
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+                            <i class="fa-solid fa-star text-sm text-[#E10101]"></i>
+
+                        </div>
+
+                        <span class="font-nato text-sm font-semibold text-gray-700">
+                            4.9 / 5
+                        </span>
+
+                        <span class="font-nato text-xs text-gray-400">
+                            from 500+ reviews
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Custommer Review Section E N D  -->
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="overflow-hidden bg-black text-white">
+
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:px-8 lg:px-10">
+
+            <!-- Footer Links -->
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-nato text-lg font-bold">
+                        Company
+                    </h3>
+
+                    <ul class="mt-5 space-y-4">
+                        <li>
+                            <a href="#about"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                About us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#careers"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Careers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#faq"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                FAQs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-nato text-lg font-bold">
+                        Services
+                    </h3>
+
+                    <ul class="mt-5 space-y-4">
+                        <li>
+                            <a href="#menu"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Our Menu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#delivery"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Food Delivery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#reservation"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Table Reservation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#offers"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Special Offers
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-nato text-lg font-bold">
+                        Resources
+                    </h3>
+
+                    <ul class="mt-5 space-y-4">
+                        <li>
+                            <a href="#blog"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Blog
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#reviews"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Customer Reviews
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#gallery"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Food Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#support"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Help Center
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="font-nato text-lg font-bold">
+                        Legal
+                    </h3>
+
+                    <ul class="mt-5 space-y-4">
+                        <li>
+                            <a href="#privacy"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#security"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Security
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#terms"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Terms of Use
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#cookies"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Cookies
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-nato text-lg font-bold">
+                        Contact
+                    </h3>
+
+                    <ul class="mt-5 space-y-4">
+                        <li>
+                            <a href="mailto:support@foodi.com"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                support@foodi.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tel:+8801234567890"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                +880 123 456 7890
+                            </a>
+                        </li>
+
+                        <li>
+                            <span class="font-nato text-sm text-white/75">
+                                Dhaka, Bangladesh
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <!-- Divider -->
+            <div class="my-10 h-px bg-white/20"></div>
+
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+
+                <!-- Address and Copyright -->
+                <div>
+                    <p class="font-nato max-w-xl text-sm font-semibold leading-7 text-white/90">
+                        Foodi Restaurant, Dhaka, Bangladesh.
+                        Fresh food, authentic taste, and unforgettable experiences.
+                    </p>
+
+                    <p class="font-nato mt-4 text-sm text-white/75">
+                        © 2026 Foodi. All rights reserved.
+                    </p>
+                </div>
+
+
+                <!-- Social Icons -->
+                <div class="flex items-center gap-3">
+
+                    <a href="#" aria-label="Facebook"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#E10101] transition duration-300 hover:bg-white/80">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#E10101] transition duration-300 hover:bg-white/80">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+
+                    <a href="#" aria-label="X"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#E10101] transition duration-300 hover:bg-white/80">
+                        <i class="fa-brands fa-x-twitter text-sm"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#E10101] transition duration-300 hover:bg-white/80">
+                        <i class="fa-brands fa-linkedin-in text-sm"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Large Background Brand Text -->
+            <div class="pointer-events-none mt-8 select-none overflow-hidden">
+
+                <h2
+                    class="font-nato -mb-10 whitespace-nowrap text-center text-[clamp(6rem,22vw,19rem)] font-black leading-none tracking-[-0.08em] text-white/10">
+                    Foodi
+                </h2>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="src/assets/js/main.ts"></script>
+</body>
+
+</html>

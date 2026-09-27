@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodi-Fast</title>
+    <link rel="shortcut icon" href="src/assets/images/foodi-logo.svg" type="image/svg">
+    <link rel="stylesheet" href="src/assets/css/all.min.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+</head>
+
+<body class="flex min-h-screen flex-col">
+    <!-- Header Start  -->
+
+    <header class="  z-50 w-full px-4 py-4 sm:px-6 lg:px-10">
+        <div
+            class="mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-white/50 bg-white/90 px-4 py-3 shadow-lg backdrop-blur-md sm:px-6">
+            <!-- Logo -->
+            <a href="index.html" class="shrink-0">
+                <img src="src/assets/images/foodi-logo.svg" alt="Foodi Logo" class="h-9 w-auto sm:h-10" />
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden items-center gap-1 md:flex">
+                <a href="index.html"
+                    class="font-nato rounded-full bg-[#E10101] px-5 py-2 text-[16px] font-medium text-white transition duration-300 hover:bg-[#c90000] ">
+                    Home
+                </a>
+
+                <a href="#"
+                    class=" font-nato rounded-full px-5 py-2 text-[16px] font-medium text-gray-700 transition duration-300 hover:bg-red-50 hover:text-[#E10101] ">
+                    About
+                </a>
+
+                <a href="#"
+                    class="font-nato rounded-full px-5 py-2 text-[16px] font-medium text-gray-700 transition duration-300 hover:bg-red-50 hover:text-[#E10101]">
+                    Menu
+                </a>
+
+                <a href="#"
+                    class="font-nato rounded-full px-5 py-2 text-[16px] font-medium text-gray-700 transition duration-300 hover:bg-red-50 hover:text-[#E10101]">
+                    Contact
+                </a>
+
+                <a href="#"
+                    class="font-nato rounded-full px-5 py-2 text-[16px] font-medium text-gray-700 transition duration-300 hover:bg-red-50 hover:text-[#E10101]">
+                    Reservation
+                </a>
+            </nav>
+
+            <!-- Right Side -->
+            <div class="flex items-center gap-2 sm:gap-3">
+
+                <!-- Cart -->
+                <a href="#" aria-label="Shopping Cart"
+                    class="relative flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-[#E10101] text-white transition duration-400 hover:border-red-100 hover:bg-red-50 hover:text-[#E10101]">
+                    <i class="fa-solid fa-cart-shopping text-sm"></i>
+
+                    <!-- Cart Count -->
+                    <span
+                        class="absolute -right-1 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-black px-1 text-[9px] font-bold text-white ">
+                        1
+                    </span>
+                </a>
+
+                <!-- Dashboard -->
+                <a href="dasbord.html"
+                    class="font-nato hidden rounded-full bg-[#E10101] px-5 py-2.5 text-[16px] font-medium text-white shadow-sm transition duration-300 hover:bg-[#c90000] hover:shadow-md sm:block">
+                    Dashboard
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button type="button" aria-label="Open Menu"
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 transition duration-300 hover:bg-red-50 hover:text-[#E10101] md:hidden cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+    <!-- Header E N D  -->
+
+
+    <main class="flex-1">
+        <!-- Add Product Form -->
+        <section class="bg-gray-50 px-4 py-10 sm:px-6 lg:px-8  min-h-screen overflow-hidden">
+
+            <div class="mx-auto max-w-4xl">
+
+                <!-- Heading -->
+                <div class="mb-8">
+
+                    <p class="font-nato text-sm text-center font-semibold uppercase tracking-[0.2em] text-[#E10101]">
+                        Product Management
+                    </p>
+
+                    <h1 class="font-nato text-center mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">
+                        Add New Product
+                    </h1>
+
+                    <p class="font-nato text-center mt-2 max-w-2xl text-sm leading-6 text-gray-500">
+                        Add your product information and manage your menu items easily.
+                    </p>
+
+                </div>
+
+
+                <!-- Form Card -->
+                <div class="rounded-xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
+
+                    <form>
+
+                        <!-- Form Grid -->
+                        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+
+
+                            <!-- Select Product -->
+                            <div class="md:col-span-2">
+
+                                <label for="product" class="font-nato mb-2 block text-sm font-semibold text-gray-800">
+                                    Select Product
+                                </label>
+
+                                <div class="relative">
+
+                                    <select id="product" name="product"
+                                        class="font-nato w-full appearance-none rounded-lg border border-gray-200 bg-white px-4 py-3 pr-10 text-sm text-gray-700 outline-none transition duration-300 focus:border-[#E10101] focus:ring-2 focus:ring-red-100">
+
+                                        <option value="" selected disabled>
+                                            Select a product
+                                        </option>
+
+                                        <option value="chicken-burger">
+                                            Chicken Burger
+                                        </option>
+
+                                        <option value="chicken-cheese-pizza">
+                                            Chicken Cheese Pizza
+                                        </option>
+
+                                        <option value="chicken-fry">
+                                            Chicken Fry
+                                        </option>
+
+                                        <option value="chicken-sandwich">
+                                            Chicken Sandwich
+                                        </option>
+
+                                        <option value="fry-nurger">
+                                            Fry Nurger
+                                        </option>
+
+                                        <option value="grill-chicken">
+                                            Grill Chicken
+                                        </option>
+
+                                        <option value="pasta">
+                                            Pasta
+                                        </option>
+
+                                        <option value="seekh-kebab">
+                                            Seekh Kebab
+                                        </option>
+
+                                    </select>
+
+                                    <!-- Dropdown Icon -->
+                                    <div
+                                        class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
+                                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                                    </div>
+
+                                </div>
+
+                                <p class="font-nato mt-2 text-xs text-gray-400">
+                                    Choose the product you want to add to your menu.
+                                </p>
+
+                            </div>
+
+
+                            <!-- Product Title -->
+                            <div>
+
+                                <label for="product-title"
+                                    class="font-nato mb-2 block text-sm font-semibold text-gray-800">
+                                    Product Title
+                                </label>
+
+                                <input type="text" id="product-title" name="product-title"
+                                    placeholder="Enter product title"
+                                    class="font-nato w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none placeholder:text-gray-400 transition duration-300 focus:border-[#E10101] focus:ring-2 focus:ring-red-100" />
+
+                            </div>
+
+
+                            <!-- Product Price -->
+                            <div>
+
+                                <label for="product-price"
+                                    class="font-nato mb-2 block text-sm font-semibold text-gray-800">
+                                    Product Price
+                                </label>
+
+                                <div class="relative">
+
+                                    <span
+                                        class="font-nato absolute left-4 top-1/2 -translate-y-1/2 text-sm font-semibold text-[#E10101]">
+                                        $
+                                    </span>
+
+                                    <input type="number" id="product-price" name="product-price"
+                                        placeholder="Enter price" min="0"
+                                        class="font-nato w-full rounded-lg border border-gray-200 bg-white py-3 pl-9 pr-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 transition duration-300 focus:border-[#E10101] focus:ring-2 focus:ring-red-100" />
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Rating -->
+                            <div>
+
+                                <label for="product-rating"
+                                    class="font-nato mb-2 block text-sm font-semibold text-gray-800">
+
+                                    Rating
+
+                                    <span class="font-normal text-gray-400">
+                                        (Optional)
+                                    </span>
+
+                                </label>
+
+                                <div class="relative">
+
+                                    <input type="number" id="product-rating" name="product-rating"
+                                        placeholder="e.g. 4.5" min="0" max="5" step="0.1"
+                                        class="font-nato w-full rounded-lg border border-gray-200 bg-white px-4 py-3 pr-12 text-sm text-gray-700 outline-none placeholder:text-gray-400 transition duration-300 focus:border-[#E10101] focus:ring-2 focus:ring-red-100" />
+
+                                    <i
+                                        class="fa-solid fa-star absolute right-4 top-1/2 -translate-y-1/2 text-sm text-[#E10101]">
+                                    </i>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Status -->
+                            <div>
+
+                                <label for="product-status"
+                                    class="font-nato mb-2 block text-sm font-semibold text-gray-800">
+                                    Product Status
+                                </label>
+
+                                <div class="relative">
+
+                                    <select id="product-status" name="product-status"
+                                        class="font-nato w-full appearance-none rounded-lg border border-gray-200 bg-white px-4 py-3 pr-10 text-sm text-gray-700 outline-none transition duration-300 focus:border-[#E10101] focus:ring-2 focus:ring-red-100">
+
+                                        <option value="active" selected>
+                                            Active
+                                        </option>
+
+                                        <option value="inactive">
+                                            Inactive
+                                        </option>
+
+                                    </select>
+
+                                    <div
+                                        class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
+                                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Divider -->
+                        <div class="my-8 h-px bg-gray-100"></div>
+
+
+                        <!-- Buttons -->
+                        <div class="flex flex-col gap-3 sm:flex-row sm:justify-end">
+
+                            <button type="reset"
+                                class="font-nato flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-gray-200 px-6 py-3 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-50">
+
+                                <i class="fa-solid fa-rotate-left text-xs"></i>
+
+                                Reset
+
+                            </button>
+
+
+                            <button type="submit"
+                                class="font-nato flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#E10101] px-7 py-3 text-sm font-semibold text-white shadow-sm transition duration-300 hover:bg-[#c90000] hover:shadow-md">
+
+                                <i class="fa-solid fa-plus text-xs"></i>
+
+                                Add Product
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="overflow-hidden bg-black text-white">
+
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:px-8 lg:px-10">
+
+            <!-- Footer Links -->
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-nato text-lg font-bold">
+                        Company
+                    </h3>
+
+                    <ul class="mt-5 space-y-4">
+                        <li>
+                            <a href="#about"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                About us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#careers"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Careers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#faq"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                FAQs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-nato text-lg font-bold">
+                        Services
+                    </h3>
+
+                    <ul class="mt-5 space-y-4">
+                        <li>
+                            <a href="#menu"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Our Menu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#delivery"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Food Delivery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#reservation"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Table Reservation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#offers"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Special Offers
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-nato text-lg font-bold">
+                        Resources
+                    </h3>
+
+                    <ul class="mt-5 space-y-4">
+                        <li>
+                            <a href="#blog"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Blog
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#reviews"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Customer Reviews
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#gallery"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Food Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#support"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Help Center
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="font-nato text-lg font-bold">
+                        Legal
+                    </h3>
+
+                    <ul class="mt-5 space-y-4">
+                        <li>
+                            <a href="#privacy"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#security"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Security
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#terms"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Terms of Use
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#cookies"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                Cookies
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-nato text-lg font-bold">
+                        Contact
+                    </h3>
+
+                    <ul class="mt-5 space-y-4">
+                        <li>
+                            <a href="mailto:support@foodi.com"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                support@foodi.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tel:+8801234567890"
+                                class="font-nato text-sm text-white/75 transition duration-300 hover:text-white">
+                                +880 123 456 7890
+                            </a>
+                        </li>
+
+                        <li>
+                            <span class="font-nato text-sm text-white/75">
+                                Dhaka, Bangladesh
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <!-- Divider -->
+            <div class="my-10 h-px bg-white/20"></div>
+
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+
+                <!-- Address and Copyright -->
+                <div>
+                    <p class="font-nato max-w-xl text-sm font-semibold leading-7 text-white/90">
+                        Foodi Restaurant, Dhaka, Bangladesh.
+                        Fresh food, authentic taste, and unforgettable experiences.
+                    </p>
+
+                    <p class="font-nato mt-4 text-sm text-white/75">
+                        © 2026 Foodi. All rights reserved.
+                    </p>
+                </div>
+
+
+                <!-- Social Icons -->
+                <div class="flex items-center gap-3">
+
+                    <a href="#" aria-label="Facebook"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#E10101] transition duration-300 hover:bg-white/80">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#E10101] transition duration-300 hover:bg-white/80">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+
+                    <a href="#" aria-label="X"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#E10101] transition duration-300 hover:bg-white/80">
+                        <i class="fa-brands fa-x-twitter text-sm"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn"
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#E10101] transition duration-300 hover:bg-white/80">
+                        <i class="fa-brands fa-linkedin-in text-sm"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Large Background Brand Text -->
+            <div class="pointer-events-none mt-8 select-none overflow-hidden">
+
+                <h2
+                    class="font-nato -mb-10 whitespace-nowrap text-center text-[clamp(6rem,22vw,19rem)] font-black leading-none tracking-[-0.08em] text-white/10">
+                    Foodi
+                </h2>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="src/assets/js/main.ts"></script>
+</body>
+
+</html>
